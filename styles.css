@@ -1,0 +1,173 @@
+body {
+    background-color: black;
+}
+
+
+#container {
+    position: relative;
+    width: 670px;
+    aspect-ratio: 9 / 16;
+    justify-content: center;
+    margin: auto;
+    background-color: #121212ed;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+}
+
+#header {
+    text-align: center;
+    color: white;
+    opacity: .87;
+}
+
+#codeBox {
+    position: absolute;
+    border-top: 2px solid white;
+    width: 100%;
+    height: 75%;
+    top: 10%;
+    justify-content: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#bank {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 15%;
+    border-top: 2px solid #ffffffd1;
+    top: 85%;
+}
+
+
+.box {
+    margin: auto;
+    cursor: pointer;
+    font-size: 1em;
+    user-select: none;
+    color: white;
+    opacity: .60;
+}
+#bank .box {
+    border: 1px solid #ffffffd1;
+    padding: 1%;
+    box-shadow: 1px 1px #000000;
+}
+#codeBox .box {
+    position: relative;
+}
+
+
+#check {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1.5px solid #ffffffd1;
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 5px;
+    background-color: #03DAC5;
+}
+#check:active {
+    background-color: #00ffe5;
+}
+
+
+#selectionContainer {
+    position: absolute;
+    width: 75%;
+    height: 30%;
+    border: 3px solid #ffffffea;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px #000000
+}
+
+.answer {
+    position: absolute;
+    font-size: 5em;
+    margin: auto;
+    top: 35%;
+    left: 50%;
+    user-select: none;
+}
+
+#correct {
+    transform: translate(-50%, -50%) rotate(15deg);
+    color: #5CDB95;
+}
+
+#incorrect {
+    transform: translate(-50%, -50%) rotate(-15deg);
+    color: #E27D60;
+}
+
+#retry {
+    position: absolute;
+    font-size: 4em;
+    top: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #03DAC5;
+    cursor: pointer;
+}
+#retry:active {
+    background-color: #00ffe5;
+}
+.next {
+    left: 9%;
+}
+.wrong {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#next {
+    display: block;
+    position: absolute;
+    font-size: 4em;
+    top: 60%;
+    left: 65%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #00ffe5;
+    color: black;
+    cursor: pointer;
+}
+#next:active {
+    background-color: #00ffe5;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { 
+    text-decoration: none; 
+    background-color: #00ffe5;
+}
+
+
+.disabled {
+    pointer-events: none;
+    user-select: none;
+}
+.disappear {
+    display: none;
+    opacity: 0;
+}
+.appear {
+    display: block;
+    opacity: 1;
+}
